@@ -15,7 +15,7 @@ export default function Home() {
       className={`min-h-screen flex flex-col items-center justify-center p-4${bgStyle === 'gradient' ? ' animate-gradient' : ''}`}
       style={getBackground(theme, bgStyle)}
     >
-      <div className="w-full max-w-md sm:max-w-lg mx-auto flex flex-col items-center gap-6 py-12">
+      <div className="w-full max-w-md mx-auto flex flex-col items-center gap-6 py-12">
         <ProfileSection config={siteConfig} theme={theme} />
         <LinkList links={siteConfig.links} theme={theme} />
         {siteConfig.socials.length > 0 && (
